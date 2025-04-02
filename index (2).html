@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initialscale=1.0">
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#audio" class="nav-link">Аудио</a></li>
+  </ul>
+</nav>
+
+<div id="audio" class="section">
+  <h2>Аудио</h2>
+  <audio controls>
+    <source src="audio.mp3">
+  </audio>
+</div>
+<nav>
+  <ul>
+    <li><a href="#video" class="nav-link">Видео</a></li>
+  </ul>
+</nav>
+
+<div id="video" class="section">
+  <h2>Видео</h2>
+  
+  <!-- Воспроизведение локального видео -->
+  <video controls>
+    <source src="video.mp4" type="video.mp4">
+    Ваш браузер не поддерживает воспроизведение видео.
+  </video>
+
+  <!-- Вставка YouTube-видео -->
+  <iframe width="560" height="315" src="https://youtu.be/Ys7-6_t7OEQ?si=_Ix_0m0mogTeFrek" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<nav>
+  <ul>
+    <li><a href="#map" class="nav-link">Карта</a></li>
+    <li><a href="#animation" class="nav-link">Анимация</a></li>
+  </ul>
+</nav>
+
+<div id="map" class="section">
+  <h2>Карта</h2>
+  <!-- Вставьте код встроенной карты Google Maps здесь -->
+  <iframe
+    src="https://maps.app.goo.gl/GjXtv7rtB5Ye5q658"
+    width="600"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+  ></iframe>
+</div>
+
+<div id="animation" class="section">
+  <h2>Анимация</h2>
+  <p class="animate">Пример текста с анимацией.</p>
+</div>
+
+<style>
+  /* Пример CSS-анимации */
+  .animate {
+    animation: fadein 2s;
+  }
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+</style>
